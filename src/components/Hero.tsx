@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import itfDiagram from "@/assets/itf-diagram.jpg";
+import evolutionDiagram from "/lovable-uploads/f3d44d61-8f2f-4250-84d0-3df856a2d851.png";
 
 const Hero = () => {
   return (
@@ -49,20 +49,24 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Diagram - Now with more prominence */}
+          {/* Evolution Diagram - Now with more prominence */}
           <div className="lg:col-span-1">
             <div className="card-glow rounded-xl p-8 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 pointer-events-none"></div>
               <div className="relative">
-                <h3 className="text-lg font-semibold mb-4 text-center">Arquitetura ITF-SBX</h3>
-                <img 
-                  src={itfDiagram} 
-                  alt="Diagrama de alto nível da ITF-SBX mostrando as camadas de configuração, execução e liquidação"
-                  className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-                />
+                <h3 className="text-lg font-semibold mb-4 text-center text-gradient">Evolução da Lógica de Poder</h3>
+                <div className="relative group">
+                  <img 
+                    src={evolutionDiagram} 
+                    alt="Evolução da Lógica de Poder: Web 1.0 (Informativo), Web 2.0 (Canais como Centro do Poder), Web 3.0 (ITF como Centro do Poder com Wallets)"
+                    className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 filter contrast-110 brightness-110"
+                  />
+                  {/* Colorful overlay effects */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                </div>
                 <div className="mt-4 text-center">
-                  <span className="text-xs text-muted-foreground bg-muted/20 px-2 py-1 rounded-full">
-                    Infraestrutura em camadas
+                  <span className="text-xs text-muted-foreground bg-gradient-to-r from-primary/20 to-accent/20 px-3 py-1.5 rounded-full border border-primary/20">
+                    sbX 2.5 → Web 3.0
                   </span>
                 </div>
               </div>
