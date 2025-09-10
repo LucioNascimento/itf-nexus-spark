@@ -6,7 +6,11 @@ const Header = () => {
       <div className="container-custom">
         <nav className="flex items-center justify-between h-16" aria-label="Navigation">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent"></div>
+            <img 
+              src="/lovable-uploads/8ba33165-1c2e-4aaf-8683-4a3aae9f5214.png" 
+              alt="SBX Logo" 
+              className="w-10 h-10 rounded-full"
+            />
             <span className="text-lg font-bold">Superbid Exchange</span>
           </div>
           
