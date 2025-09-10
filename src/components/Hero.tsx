@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <section className="section-padding pt-20">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-5 gap-8 items-start">
+        <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Main Content */}
-          <div className="lg:col-span-3 space-y-6">
+          <div className="lg:col-span-2 space-y-6">
             <div className="card-glow rounded-xl p-8">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-medium mb-6">
                 ITF-SBX • Infraestrutura Tecnológica Financeira
@@ -49,14 +49,23 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Diagram */}
-          <div className="lg:col-span-2">
-            <div className="card-glow rounded-xl p-6">
-              <img 
-                src={itfDiagram} 
-                alt="Diagrama de alto nível da ITF-SBX mostrando as camadas de configuração, execução e liquidação"
-                className="w-full rounded-lg"
-              />
+          {/* Diagram - Now with more prominence */}
+          <div className="lg:col-span-1">
+            <div className="card-glow rounded-xl p-8 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 pointer-events-none"></div>
+              <div className="relative">
+                <h3 className="text-lg font-semibold mb-4 text-center">Arquitetura ITF-SBX</h3>
+                <img 
+                  src={itfDiagram} 
+                  alt="Diagrama de alto nível da ITF-SBX mostrando as camadas de configuração, execução e liquidação"
+                  className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+                />
+                <div className="mt-4 text-center">
+                  <span className="text-xs text-muted-foreground bg-muted/20 px-2 py-1 rounded-full">
+                    Infraestrutura em camadas
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
