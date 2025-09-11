@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { UserPlus, FileText, Send, Users } from "lucide-react";
 
 const InviteSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,7 +31,12 @@ const InviteSection = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="card-glow rounded-xl p-8">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Convites & Parcerias</h2>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30">
+                <UserPlus className="w-8 h-8 text-primary" />
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-bold">Convites & Parcerias</h2>
+            </div>
             <p className="text-muted-foreground mb-8">
               Estamos habilitando novos canais e módulos. Se você opera ativos com exigência de compliance e liquidação segura, fale com a gente.
             </p>
@@ -92,7 +98,9 @@ const InviteSection = () => {
                   variant="hero" 
                   size="lg"
                   disabled={isSubmitting}
+                  className="gap-2"
                 >
+                  <Send className="w-4 h-4" />
                   {isSubmitting ? "Enviando..." : "Solicitar convite"}
                 </Button>
                 <Button variant="outline" size="lg" asChild>
@@ -103,7 +111,12 @@ const InviteSection = () => {
           </div>
 
           <div className="card-glow rounded-xl p-8">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Materiais & Compliance</h2>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 border border-accent/30">
+                <FileText className="w-8 h-8 text-accent" />
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-bold">Materiais & Compliance</h2>
+            </div>
             <p className="text-muted-foreground mb-6">
               Documentação de integração, políticas e requisitos de módulo estão disponíveis para parceiros aprovados.
             </p>

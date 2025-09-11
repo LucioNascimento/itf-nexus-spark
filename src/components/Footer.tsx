@@ -1,19 +1,31 @@
+import { Shield, ExternalLink, Mail } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border py-12">
+    <footer className="border-t border-border py-12 bg-muted/5">
       <div className="container-custom">
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-          <div className="text-muted-foreground">
+          <div className="flex items-center gap-2 text-muted-foreground">
+            <Shield className="w-4 h-4" />
             © {currentYear} Superbid Exchange — ITF-SBX
           </div>
           <div className="flex items-center gap-4 text-muted-foreground">
-            <a href="#o-que-e" className="hover:text-foreground transition-colors">Sobre</a>
+            <a href="#o-que-e" className="hover:text-foreground transition-colors flex items-center gap-1">
+              <ExternalLink className="w-3 h-3" />
+              Sobre
+            </a>
             <span>•</span>
-            <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
+            <a href="#faq" className="hover:text-foreground transition-colors flex items-center gap-1">
+              <ExternalLink className="w-3 h-3" />
+              FAQ
+            </a>
             <span>•</span>
-            <a href="mailto:contato@superbid.exchange" className="hover:text-foreground transition-colors">Contato</a>
+            <a href="mailto:contato@superbid.exchange" className="hover:text-foreground transition-colors flex items-center gap-1">
+              <Mail className="w-3 h-3" />
+              Contato
+            </a>
           </div>
         </div>
         
