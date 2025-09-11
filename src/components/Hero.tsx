@@ -8,6 +8,18 @@ const Hero = () => {
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-6">
+            {/* Logo Superbid Exchange - Integrado de forma fluida */}
+            <div className="flex justify-center lg:justify-start mb-8">
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/10 to-accent/20 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-all duration-500"></div>
+                <img 
+                  src="/lovable-uploads/cf230cc4-a915-4af4-a9cc-a8a4a066f113.png" 
+                  alt="Superbid Exchange - ITF-SBX Logo" 
+                  className="relative h-16 lg:h-20 w-auto object-contain filter drop-shadow-lg hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            
             <div className="card-glow rounded-xl p-8">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-medium mb-6">
                 ITF-SBX • Infraestrutura Tecnológica Financeira
