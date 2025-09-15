@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
+  const headerLogoUrl = `${import.meta.env.BASE_URL}lovable-uploads/8ba33165-1c2e-4aaf-8683-4a3aae9f5214.png`;
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 backdrop-blur-xl bg-background/80">
       <div className="container-custom">
@@ -9,7 +10,7 @@ const Header = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/30 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
               <img 
-                src="/lovable-uploads/8ba33165-1c2e-4aaf-8683-4a3aae9f5214.png" 
+                src={headerLogoUrl}
                 alt="SBX Logo" 
                 className="relative w-12 h-12 rounded-full ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300 hover:scale-105"
               />

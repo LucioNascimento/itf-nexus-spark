@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import evolutionDiagram from "/lovable-uploads/f3d44d61-8f2f-4250-84d0-3df856a2d851.png";
+const heroLogoUrl = `${import.meta.env.BASE_URL}lovable-uploads/cf230cc4-a915-4af4-a9cc-a8a4a066f113.png`;
+const evolutionDiagramUrl = `${import.meta.env.BASE_URL}lovable-uploads/f3d44d61-8f2f-4250-84d0-3df856a2d851.png`;
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/10 to-accent/20 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-all duration-500"></div>
                 <img 
-                  src="/lovable-uploads/cf230cc4-a915-4af4-a9cc-a8a4a066f113.png" 
+                  src={heroLogoUrl}
                   alt="Superbid Exchange - ITF-SBX Logo" 
                   className="relative h-16 lg:h-20 w-auto object-contain filter drop-shadow-lg hover:scale-105 transition-transform duration-300"
                 />
@@ -69,7 +70,7 @@ const Hero = () => {
                 <h3 className="text-lg font-semibold mb-4 text-center text-gradient">Evolução da Lógica de Poder</h3>
                 <div className="relative group">
                   <img 
-                    src={evolutionDiagram} 
+                    src={evolutionDiagramUrl} 
                     alt="Evolução da Lógica de Poder: Web 1.0 (Informativo), Web 2.0 (Canais como Centro do Poder), Web 3.0 (ITF como Centro do Poder com Wallets)"
                     className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 filter contrast-110 brightness-110"
                   />

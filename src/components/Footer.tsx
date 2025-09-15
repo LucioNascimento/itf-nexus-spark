@@ -3,6 +3,7 @@ import { Shield, ExternalLink, Mail } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const footerLogoUrl = `${import.meta.env.BASE_URL}lovable-uploads/cf230cc4-a915-4af4-a9cc-a8a4a066f113.png`;
   return (
     <footer className="border-t border-border py-12 bg-muted/5">
       <div className="container-custom">
@@ -10,7 +11,7 @@ const Footer = () => {
           {/* Logo completo no footer */}
           <div className="flex items-center gap-4">
             <img 
-              src="/lovable-uploads/cf230cc4-a915-4af4-a9cc-a8a4a066f113.png" 
+              src={footerLogoUrl}
               alt="Superbid Exchange Logo" 
               className="h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
