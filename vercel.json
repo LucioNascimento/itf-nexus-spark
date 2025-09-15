@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [{ "src": "dist/**/*", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/itf-nexus-spark/(.*)", "dest": "/itf-nexus-spark/index.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
+
+

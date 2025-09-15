@@ -30,8 +30,14 @@ jobs:
         run: npm ci
         working-directory: .
 
-      - name: Build
-        run: npm run build
+      - name: Build (with base)
+        run: |
+          echo "Using base: /itf-nexus-spark/"
+          VITE_BASE=/itf-nexus-spark/ npm run build
+        working-directory: .
+
+      - name: Create SPA 404 fallback
+        run: cp dist/index.html dist/404.html
         working-directory: .
 
       - name: Upload artifact

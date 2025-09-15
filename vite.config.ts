@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "development" ? "/" : "/itf-nexus-spark/",
+  base: process.env.VITE_BASE || (mode === "development" ? "/" : "/itf-nexus-spark/"),
   server: {
     host: "::",
     port: 8080,
